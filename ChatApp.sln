@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7C636952-9197-422A-BB5C-BC76719FC0B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{85CBE8CA-27A2-4045-8C43-9431C0BB2640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp.Repository", "src\Common\ChatApp.Repository\ChatApp.Repository.csproj", "{3AF13183-C80C-400E-8F4D-E409DA11CD8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservice", "Microservice", "{96A274DF-438E-4EFC-8F20-5FF24E92E66F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp.API", "src\Microservice\ChatApp.API\ChatApp.API.csproj", "{DDF2B86C-46DA-4499-A0D0-825443159F71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp.Domain", "src\Microservice\ChatApp.Domain\ChatApp.Domain.csproj", "{81E8DFC7-368C-4075-A5A4-946DECC49FBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp.Service", "src\Microservice\ChatApp.Service\ChatApp.Service.csproj", "{EB40E922-08DF-4485-9279-5D9F13F3C2F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AF13183-C80C-400E-8F4D-E409DA11CD8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF13183-C80C-400E-8F4D-E409DA11CD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF13183-C80C-400E-8F4D-E409DA11CD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF13183-C80C-400E-8F4D-E409DA11CD8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF2B86C-46DA-4499-A0D0-825443159F71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF2B86C-46DA-4499-A0D0-825443159F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF2B86C-46DA-4499-A0D0-825443159F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF2B86C-46DA-4499-A0D0-825443159F71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E8DFC7-368C-4075-A5A4-946DECC49FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E8DFC7-368C-4075-A5A4-946DECC49FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E8DFC7-368C-4075-A5A4-946DECC49FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E8DFC7-368C-4075-A5A4-946DECC49FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB40E922-08DF-4485-9279-5D9F13F3C2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB40E922-08DF-4485-9279-5D9F13F3C2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB40E922-08DF-4485-9279-5D9F13F3C2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB40E922-08DF-4485-9279-5D9F13F3C2F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{85CBE8CA-27A2-4045-8C43-9431C0BB2640} = {7C636952-9197-422A-BB5C-BC76719FC0B8}
+		{3AF13183-C80C-400E-8F4D-E409DA11CD8E} = {85CBE8CA-27A2-4045-8C43-9431C0BB2640}
+		{96A274DF-438E-4EFC-8F20-5FF24E92E66F} = {7C636952-9197-422A-BB5C-BC76719FC0B8}
+		{DDF2B86C-46DA-4499-A0D0-825443159F71} = {96A274DF-438E-4EFC-8F20-5FF24E92E66F}
+		{81E8DFC7-368C-4075-A5A4-946DECC49FBE} = {96A274DF-438E-4EFC-8F20-5FF24E92E66F}
+		{EB40E922-08DF-4485-9279-5D9F13F3C2F5} = {96A274DF-438E-4EFC-8F20-5FF24E92E66F}
+	EndGlobalSection
+EndGlobal
