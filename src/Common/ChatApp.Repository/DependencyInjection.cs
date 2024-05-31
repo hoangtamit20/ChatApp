@@ -1,4 +1,4 @@
-﻿using ChatApp.Repository.BaseEntities;
+﻿using ChatApp.Repository.Entities.User;
 using ChatApp.Repository.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
