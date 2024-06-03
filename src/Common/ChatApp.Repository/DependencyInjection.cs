@@ -3,6 +3,7 @@ using ChatApp.Repository.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using ChatApp.Repository.Repositories;
 
 namespace ChatApp.Repository;
 
@@ -21,10 +22,15 @@ public static class DependencyInjection
                 .CreateDbContext()
         );
 
-        services.AddIdentityCore<UserEntity>()
-            .AddRoles<IdentityRole>()
+        services.AddDataProtection();
+
+        services.AddIdentity<UserEntity, IdentityRole>()
+            .AddDefaultTokenProviders()
             .AddEntityFrameworkStores<ChatAppDbContext>()
-            .AddTokenProvider<DataProtectorTokenProvider<UserEntity>>(TokenOptions.DefaultProvider);
+            .AddRoles<IdentityRole>();
+
+
+        services.AddScoped<IDbRepository, DbRepository>();
 
         return services;
     }

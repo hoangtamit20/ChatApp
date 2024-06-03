@@ -3,7 +3,6 @@ using ChatApp.Repository.Entities.User;
 
 namespace ChatApp.Repository.Entities.Chat
 {
-    [Table(name: "Message")]
     public class MessageEntity
     {
         public string Id { get; private set; } = Guid.NewGuid().ToString();

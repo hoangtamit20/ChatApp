@@ -1,4 +1,3 @@
-
 using System.ComponentModel.DataAnnotations.Schema;
 using ChatApp.Repository.Entities.Chat;
 using ChatApp.Repository.Enums.User;
@@ -34,9 +33,8 @@ namespace ChatApp.Repository.Entities.User
         public virtual ICollection<MessageEntity> Messages { get; set; } = new List<MessageEntity>();
         [InverseProperty(property: "User")]
         public virtual ICollection<GroupChatMemberEntity> GroupChatMembers { get; set; } = new List<GroupChatMemberEntity>();
+        [InverseProperty(property: "User")]
+        public virtual ICollection<WaitingMessageChatEntity> WaitingMessageChats { get; set; } = new List<WaitingMessageChatEntity>();
         #endregion inverse property
-
-
-
     }
 }

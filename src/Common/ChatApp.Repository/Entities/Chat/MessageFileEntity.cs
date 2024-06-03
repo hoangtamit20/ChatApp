@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using ChatApp.Repository.Enums.File;
 
 namespace ChatApp.Repository.Entities.Chat
@@ -12,7 +13,9 @@ namespace ChatApp.Repository.Entities.Chat
         public string MessageId { get; set; } = null!;
 
         #region navigate property
-        public MessageEntity Message { get; set; } = null!;
+        [ForeignKey(name: "MessageId")]
+        [InverseProperty(property: "MessageFiles")]
+        public virtual MessageEntity Message { get; set; } = null!;
         #endregion navigate property
     }
 }
